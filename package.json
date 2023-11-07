@@ -1,15 +1,16 @@
 {
   "name": "lunch-scrapers",
-  "main": "lib/http.js",
+  "main": "lib/main.js",
   "scripts": {
     "gcp-build": "node node_modules/puppeteer/install.mjs",
-    "start": "functions-framework --target=getIsoPajaMenu"
+    "start": "functions-framework --target=crawlIsoPajaMenu"
   },
   "type": "module",
   "prettier": {},
   "dependencies": {
     "@google-cloud/functions-framework": "^3.3.0",
     "@google-cloud/vision": "^4.0.2",
+    "@google-cloud/storage": "^7.5.0",
     "puppeteer": "^21.4.0"
   }
 }
