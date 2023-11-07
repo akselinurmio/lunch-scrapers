@@ -3,7 +3,7 @@
   "main": "lib/main.js",
   "scripts": {
     "gcp-build": "node node_modules/puppeteer/install.mjs",
-    "start": "functions-framework --target=crawlIsoPajaMenu"
+    "start": "functions-framework --target=getIsoPajaMenu"
   },
   "type": "module",
   "prettier": {},
